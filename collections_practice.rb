@@ -51,7 +51,7 @@ end
 def add_s(array)
   new_array = []
   array.each do |name|
-    new_array << "#{name}s"
+    new_array << "#{name}s" if name != "feet"
   end
   new_array
 end
